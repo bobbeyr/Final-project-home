@@ -1,3 +1,4 @@
+
 body { 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
@@ -32,7 +33,7 @@ nav ul li a {
 }
 
 nav ul li a:hover { 
-    background-color: #15cbeb; 
+    background-color: #1584eb; 
     color: rgb(0, 0, 0); 
     transition: ease-in-out 0.2s ;
 }
@@ -61,4 +62,36 @@ footer {
     top: 20%;
     right: 5%;
     transform: translate(5%, 20%);
+}
+/*card section*/
+.cards_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+}
+.cards{
+    padding: 25px;
+    margin: 10px;
+    height: 310px;
+    width: 250px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: solid 8px #1584eb;
+    border-left: solid 8px #1584eb;
+    transition: 0.2s ease-in-out;
+    background-color: #1584eb;
+}
+.cards p {
+    font-size: 1rem;
+    margin-top: 20px;
+    text-align: center;
+}
+.cards:hover {
+    transform: scale(1.02);
+}
+.img{
+    width: 215px;
+    height: 117px;
 }
