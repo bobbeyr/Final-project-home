@@ -66,14 +66,14 @@ footer {
 /*card section*/
 .cards_wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 .cards{
     padding: 25px;
     margin: 10px;
-    height: 310px;
-    width: 250px;
+    height: 325px;
+    width: 300px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
