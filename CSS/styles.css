@@ -1,12 +1,19 @@
 
+:root{
+    --clr-blue: rgb(0, 83, 155);
+    --clr-red: rgb(227, 27, 35);
+    --clr-black: rgb(0, 0, 0);
+}
+
 body { 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
-    background-color: #e0ad04;
+    background-color: var(--clr-black);
+    color: white;
 }
 
 header { 
-    background: #ff0800; 
+    background: var(--clr-red); 
     color: white; 
     padding: 10px; 
     text-align: center; 
@@ -33,7 +40,7 @@ nav ul li a {
 }
 
 nav ul li a:hover { 
-    background-color: #1584eb; 
+    background-color: var(--clr-blue); 
     color: rgb(0, 0, 0); 
     transition: ease-in-out 0.2s ;
 }
@@ -43,14 +50,16 @@ main {
 }
 
 footer { 
-    background: #ff0800; 
+    background: var(--clr-red); 
     color: white; 
     text-align: center; 
     padding: 10px; 
-    position: fixed; 
     bottom: 0; 
-    width: 100%;
+    width: 100.5%;
     margin-left: -20px; 
+    margin-bottom: -20px;
+    margin-right: -20px;
+    position: fixed;
 }
 #home{
     h2{
@@ -67,21 +76,21 @@ footer {
 .cards_wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 .cards{
     padding: 25px;
     margin: 10px;
-    height: 325px;
+    height: 375px;
     width: 300px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-bottom: solid 8px #1584eb;
-    border-left: solid 8px #1584eb;
+    border-bottom: solid 8px #8794a0;
+    border-left: solid 8px #8794a0;
     transition: 0.2s ease-in-out;
-    background-color: #1584eb;
+    background-color: #8794a0;
 }
 .cards p {
     font-size: 1rem;
