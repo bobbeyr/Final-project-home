@@ -147,3 +147,37 @@ display: block;
 .transport1{
     width: 500px;
 }
+/*events*/
+#form_purch1{
+    display: none;
+    font-size: 1.5rem;
+}
+
+#form_purch1 button{
+    height: 50px;
+    width: 100px;
+    font-size: 1.3rem;
+    background-color: var(--clr-blue);
+}
+
+#form_purch2{
+    display: none;
+    font-size: 1.5rem;
+}
+
+#form_purch2 button{
+    height: 50px;
+    width: 100px;
+    font-size: 1.3rem;
+}
+
+#output_Cost1{
+    font-size: 2rem;
+}
+
+#output_Cost2{
+    font-size: 2rem;
+}
+.eventimg{
+    width: 300px;
+}

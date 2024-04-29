@@ -22,6 +22,43 @@
         <section id="food">
             <h2>Local Cuisine</h2>
             <!-- Add content about local food here -->
+            <div class="events_items">
+                <div class="card" id="card_mountian">
+                    <h1>Subway</h1>
+        
+                    <a href="https://upload.wikimedia.org/wikipedia/commons/c/c3/Subway-restaurant.jpg"><img class="eventimg" src="../images/Subway-restaurant.jpg" alt="Subway"></a>
+        
+                    <p class="cost_text">Locations</p><button id="mountian_button" class="events_button">Locate</button>
+
+
+                    <form id="form_purch1" action="#" method="post">
+                        <label>Our Locations</label> <br>
+                        
+                        <label>
+                            4600 Winchester Pike, Columbus, OH 43232<br>
+                            2181 E Livingston Ave, Columbus, OH 43209<br>
+                            1855 Lockbourne Rd, Columbus, OH 43207<br>
+                            2910 E Main St, Columbus, OH 43209<br>
+                            6994 E Broad St Unit 7, Columbus, OH 43213
+                        </label><label id="output_Cost1"></label>
+                    </form>
+                </div>
+
+                <div class="card" id="card_trail">
+                    <h1>Trail Getaway</h1>
+        
+                    <a href="https://commons.wikimedia.org/wiki/File:Tent_site_at_Indian_Creek_Campground_(14250912098).jpg"><img src="../images/9m36osnr.bmp" alt="campground" width="600px" height="400px"></a>
+        
+                    <p class="cost_text2">Cost per night - $40</p><button id="trail_button" class="events_button">Purchase</button>
+        
+                    <form id="form_purch2" action="#" method="post">
+                        <label>How many nights will you be staying?</label> <br>
+                        <input type="text" id="nights2" name="event2"> <br>
+                        <label>Final Cost: </label><label id="output_Cost2">$40</label>
+                        <button id="submit2" name="submit2">Submit</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -33,6 +70,7 @@
         CoGo Bikeshares<br>
         Central Ohio Bikeways</p>
     </footer>
+    <script src="../Javascript/events.js"></script>
     <script src="../Javascript/app.js"></script>
 </body>
 </html>
