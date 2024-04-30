@@ -181,3 +181,61 @@ display: block;
 .eventimg{
     width: 300px;
 }
+.events_items{
+    display: inline-flex;
+}
+
+.card{
+    padding: 15px;
+    border-radius: 5px;
+    border-right: solid 8px var(--clr-borders);
+    background-color: var(--clr-DarkishBlue);
+    transition: 0.2s ease-in-out;
+    margin-bottom: 25px
+}
+
+.card img{
+    border-radius: 5px;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+#card_trail{
+    width: 650px;
+    height: 570px;
+    margin-left: 15px;
+}
+
+#card_mountian{
+    width: 650px;
+    height: 570px;
+}
+
+.cost_text{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.cost_text2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.events_button{
+    font-weight: 100;
+    font-size: 2.5rem;
+    padding: 5px;
+    height: 70px;
+    width: 180px;
+    margin-left: 470px;
+    transform: translateY(-40px);
+    transition: 0.4s ease-in-out;
+}
+
+
+#trail_button{
+    transform: translateY(-20px);
+    margin-left: 470px;
+}
