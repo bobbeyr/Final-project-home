@@ -1,20 +1,20 @@
 //GOAL - display form and extend card length to fit form when "PURCHASE" button is clicked
-//mountian
-let hotelForm = document.getElementById('form_purch1');
-let hotelButton = document.getElementById('hotel_button');
+//sub
+let subForm = document.getElementById('form_purch1');
+let subButton = document.getElementById('sub_button');
 
-hotelButton.addEventListener("click", function() {
+subButton.addEventListener("click", function() {
     this.classList.toggle("active");
 
-    let card = document.getElementById('card_Hotel');
+    let card = document.getElementById('card_sub');
 
-    if (hotelForm.style.display.match("block")) {
-        hotelForm.style.display = "none";
+    if (subForm.style.display.match("block")) {
+        subForm.style.display = "none";
         card.style.height = "570px";
 
     }
     else {  
-        hotelForm.style.display = "block";
+        subForm.style.display = "block";
         card.style.height = "770px";
     }
 })
@@ -37,7 +37,7 @@ submit1.addEventListener("click", function(event) {
 })
 
 
-//trail
+//rest
 let trailForm = document.getElementById('form_purch2')
 let zoombeziButton = document.getElementById('zoombezi_button');
 

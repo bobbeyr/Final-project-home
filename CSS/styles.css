@@ -157,7 +157,6 @@ display: block;
     height: 50px;
     width: 100px;
     font-size: 1.3rem;
-    background-color: var(--clr-blue);
 }
 
 #form_purch2{
@@ -181,7 +180,7 @@ display: block;
 .eventimg{
     width: 300px;
 }
-.events_items{
+.example_items{
     display: inline-flex;
 }
 
@@ -191,7 +190,7 @@ display: block;
     border-right: solid 8px var(--clr-borders);
     background-color: var(--clr-DarkishBlue);
     transition: 0.2s ease-in-out;
-    margin-bottom: 25px
+    margin-bottom: 25px;
 }
 
 .card img{
@@ -202,13 +201,18 @@ display: block;
     transform: scale(1.02);
 }
 
-#card_trail{
+#card_bay{
     width: 650px;
     height: 570px;
     margin-left: 15px;
 }
 
-#card_mountian{
+#card_Hotel{
+    width: 650px;
+    height: 570px;
+}
+
+#card_sub{
     width: 650px;
     height: 570px;
 }
@@ -235,7 +239,24 @@ display: block;
 }
 
 
-#trail_button{
+#zoombezi_button{
     transform: translateY(-20px);
     margin-left: 470px;
+}
+
+/*responsive*/
+#mobile-menu{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+}
+.navbar_toggle .bar{
+    width: 25px;
+    height: 4px;
+    margin: 5px auto;
+    transition: all .3s ease-in-out;
+    display: block;
+    cursor: pointer;
+    background: #fff;
 }

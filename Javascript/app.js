@@ -1,82 +1,48 @@
-//GOAL - display form and extend card length to fit form when "PURCHASE" button is clicked
-//mountian
-let mountianForm = document.getElementById('form_purch1');
-let mountianButton = document.getElementById('mountian_button');
-
-mountianButton.addEventListener("click", function() {
-    this.classList.toggle("active");
-
-    let card = document.getElementById('card_mountian');
-
-    if (mountianForm.style.display.match("block")) {
-        mountianForm.style.display = "none";
-        card.style.height = "570px";
-
-    }
-    else {  
-        mountianForm.style.display = "block";
-        card.style.height = "770px";
-    }
-})
-
-let mountianText = document.getElementById('nights1');
-let output1 = document.getElementById('output_Cost1')
-let submit1 = document.getElementById('submit1');
-
-submit1.addEventListener("click", function(event) {
-    event.preventDefault();
-
-    const form = document.getElementById('form_purch1');
-
-    let userInput = form.elements['event1'].value.trim();
-    console.log(userInput);
-    let finalCost = userInput * 50 ;
-
-    output1.textContent = "$" + finalCost;
-
-})
-
-
-//trail
-let trailForm = document.getElementById('form_purch2')
-let trailButton = document.getElementById('trail_button');
-
-trailButton.addEventListener("click", function() {
-    this.classList.toggle("active");
-
-    let card = document.getElementById('card_trail');
-
-    if (trailForm.style.display.match("block")) {
-        trailForm.style.display = "none";
-        card.style.height = "570px";
-
-    }
-    else {  
-        trailForm.style.display = "block";
-        card.style.height = "770px";
-    }
-})
-
-let trailText = document.getElementById('nights2');
-let output2 = document.getElementById('output_Cost2')
-let submit2 = document.getElementById('submit2');
-
-submit2.addEventListener("click", function(event) {
-    event.preventDefault();
-
-    const form = document.getElementById('form_purch2');
-    
-    let userInput = form.elements['event2'].value.trim();
-    console.log(userInput);
-    let finalCost = userInput * 40 ;
-
-    output2.textContent = "$" + finalCost;
-
-})
-
-
-
-
-//GOAL PT 2 -take number of nights user inputs and multiplies it by the cost per night, then outputs it to the "FIANL COST" label
-//add catch that detcts if user input is a number or a letter/other character
-
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.navbar__menu');
+const navLogo = document.querySelector('#navbar__logo');
+// Display Mobile Menu
+const mobileMenu = () => {
+  menu.classList.toggle('is-active');
+  menuLinks.classList.toggle('active');
+};
+menu.addEventListener('click', mobileMenu);
+// Show active menu when scrolling
+const highlightMenu = () => {
+  const elem = document.querySelector('.highlight');
+  const homeMenu = document.querySelector('#home-page');
+  const aboutMenu = document.querySelector('#about-page');
+  const servicesMenu = document.querySelector('#services-page');
+  let scrollPos = window.scrollY;
+  // console.log(scrollPos);
+  // adds 'highlight' class to my menu items
+  if (window.innerWidth > 960 && scrollPos < 600) {
+    homeMenu.classList.add('highlight');
+    aboutMenu.classList.remove('highlight');
+    return;
+  } else if (window.innerWidth > 960 && scrollPos < 1400) {
+    aboutMenu.classList.add('highlight');
+    homeMenu.classList.remove('highlight');
+    servicesMenu.classList.remove('highlight');
+    return;
+  } else if (window.innerWidth > 960 && scrollPos < 2345) {
+    servicesMenu.classList.add('highlight');
+    aboutMenu.classList.remove('highlight');
+    return;
+  }
+  if ((elem && window.innerWIdth < 960 && scrollPos < 600) || elem) {
+    elem.classList.remove('highlight'); 
+  }
+};
+window.addEventListener('scroll', highlightMenu);
+window.addEventListener('click', highlightMenu);
+//  Close mobile Menu when clicking on a menu item
+const hideMobileMenu = () => {
+  const menuBars = document.querySelector('.is-active');
+  if (window.innerWidth <= 768 && menuBars) {
+    menu.classList.toggle('is-active');
+    menuLinks.classList.remove('active');
+  }
+};
+menuLinks.addEventListener('click', hideMobileMenu);
+navLogo.addEventListener('click', hideMobileMenu);
