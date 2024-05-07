@@ -32,7 +32,8 @@ submit1.addEventListener("click", function(event) {
     console.log(userInput);
     let finalCost = userInput * 169 ;
 
-    output1.textContent = "$" + finalCost;
+
+    output1.textContent = "$" + finalCost.toFixed(2);
 
 })
 
@@ -70,7 +71,7 @@ submit2.addEventListener("click", function(event) {
     console.log(userInput);
     let finalCost = userInput * 34.99 ;
 
-    output2.textContent = "$" + finalCost;
+    output2.textContent = "$" + finalCost.toFixed(2);
 
 })
 
