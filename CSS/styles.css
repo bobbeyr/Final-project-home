@@ -413,4 +413,10 @@ display: block;
     border-style: solid;
     width: 550px;
    }
-
+   @media screen and (max-width: 850px){
+    .example_items{
+        align-items: left;
+        justify-content: left;
+        margin-left: 5%;
+    }
+  }
