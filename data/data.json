@@ -1,0 +1,34 @@
+{
+    "activities": [
+        {
+            "entertainment": "Cosi",
+            "type": "science museum",
+            "look": "img/COSI.jpg"
+        },
+        {
+            "entertainment": "Zoombezi Bay",
+            "type": "water park and zoo",
+            "look": "img/Zoombezi_Bay.jpg"
+        },
+        {
+            "entertainment": "CMOA",
+            "type": "museum of art",
+            "look": "img/Columbus_Museum_Of_Art.jpg"
+        },
+        {
+            "entertainment": "OtherWorld",
+            "type": "interactive museum",
+            "look": "img/OtherWorld.jpg"
+        },
+        {
+            "entertainment": "Columbus Blue Jackets",
+            "type": "columbus hockey team",
+            "look": "img/Blue_Jackets.jpg"
+        },
+        {
+            "entertainment": "NVMM",
+            "type": "national veterans memorial and museum",
+            "look": "img/National_Veterans_Memorial_and_Museum.jpg"
+        }
+    ]
+}

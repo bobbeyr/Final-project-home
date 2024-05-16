@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<activities>
+    <activity>
+        <entertainment>Cosi</entertainment>
+        <type>science museum</type>
+        <look>img/COSI.jpg</look>
+    </activity>
+    <activity>
+        <entertainment>Zoombezi Bay</entertainment>
+        <type>water park and zoo</type>
+        <look>img/Zoombezi_Bay.jpg</look>
+    </activity>
+    <activity>
+        <entertainment>CMOA</entertainment>
+        <type>museum of art</type>
+        <look>img/Columbus_Museum_Of_Art.jpg</look>
+    </activity>
+    <activity>
+        <entertainment>OtherWorld</entertainment>
+        <type>interactive museum</type>
+        <look>img/OtherWorld.jpg</look>
+    </activity>
+    <activity>
+        <entertainment>Columbus Blue Jackets</entertainment>
+        <type>columbus hockey team</type>
+        <look>img/Blue_Jackets.jpg</look>
+    </activity>
+    <activity>
+        <entertainment>NVMM</entertainment>
+        <type>national veterans memorial and museum</type>
+        <look>img/National_Veterans_Memorial_and_Museum.jpg</look>
+    </activity>
+</activities>
