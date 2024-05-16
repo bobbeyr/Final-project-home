@@ -17,7 +17,7 @@ xhr.onload = function(){
         let newCard = '';
         //loop through responseObject to obtain all elements
         //and data to add to the "card" on the webpage
-        for(let i=0; i<responseObject.activities.length; i++){
+        for(let i=0; i<responseObject.events.length; i++){
             newCard += "<div class='activity'>"
             newCard += "<img src='" + responseObject.activities[i].look + "'"
             newCard += "alt ='" + responseObject.activities[i].entertainment + "' />"
